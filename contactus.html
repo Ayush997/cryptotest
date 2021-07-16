@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CONTACT US</title>
+<link rel="stylesheet" href="css files/HE.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  background:url('https://ribook.org/wp-content/uploads/2019/01/light-blue-background.jpg') no-repeat;
+  background-size: cover;
+  height:100%;
+
+}
+.content {
+  max-width:600px;
+  margin: auto;
+  margin-top:50px ;
+  background: white;
+  padding: 10px;
+  border-radius :5%;
+}
+
+</style>
+</head>
+<body>
+<!--               -->
+<div class="content">
+<div style="padding:10px 16px">
+  <h3 class="bl-center fontsize">CONTACT US</h3>
+  <p class="bl-center bl-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:50px" style="padding-left-left:100px">
+    <br>
+	<div class="main">
+		<form action="mail_handler.php" method="post" name="form" class="form-box">
+			<label for="name">Name</label><br>
+			<input class="bl-input bl-border"type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+			<label for="email">Email ID</label><br>
+			<input class="bl-input bl-border" type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+			<label for="phone">Phone</label><br>
+			<input class="bl-input bl-border" type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+			<label for="message">Message</label><br>
+			<textarea class="bl-input bl-border" name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
+			<input type="submit" name="submit" value="Send" class="sub-btn">
+		</form>
+	</div>
+   <!-- <form  action="mail_handler.php" target="_blank">
+	
+      <p><input class="bl-input bl-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="bl-input bl-border" type="text" placeholder="Email" required name="Email"></p>
+	  
+      <p><input class="bl-input bl-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="bl-input bl-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="bl-button bl-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+  </div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
