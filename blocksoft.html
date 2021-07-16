@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<title>Blocksoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css files/main page.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.wrrr{  
+  background: rgba(238, 238, 238, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+  
+}
+.a:hover { background-color: white; }
+.bl-llarge{font-size:23px!important;
+color:white;}
+.bl-coll {
+font-family:'Courier New';
+color:white;
+mix-blend-mode:difference;
+}
+.f{
+font-size:40px;
+color:white;
+}
+.c{
+color:white;
+}
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/blimages/mac.jpg"); 
+  min-height: 100%;
+}
+.but{
+color:#fff!important;
+background-color:#3F2F79!important;
+opacity:10;
+
+mix-blend-mode:difference;
+background-color:;  
+}
+.bl-bar .bl-button {
+
+  padding: 16px;
+}
+.bl-container{
+opacity:0.9;
+}
+.bl-sidebar{
+height:100%;
+width:200px;
+background-color:#fff;
+position:fixed!important;
+z-index:1;
+overflow:auto}
+
+.bg {
+  background-image: url('Images/back.jpg');
+  background-size: cover;
+ 
+}
+html{
+		  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%,rgba(63,47,121,0.7), rgba(0, 0, 0, 0.73)),url(Images/bg-01.jpg) no-repeat center center fixed;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+.fbg{
+ background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%,rgba(63,47,121,0.7), rgba(0, 0, 0, 0.73)),
+    url('bg-01.jpg');
+  background-size: auto;
+   
+  
+ 
+ 
+ 
+}
+.bb{
+  background-image: url("Images/backserv.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+#myNavbar.navbar-default{
+color:white;
+mix-blend-mode:difference;
+background-color:rgba(63,47,121,0.9);  
+}
+.bl-quater{
+opacity:1;
+padding: 8px 8px;
+}
+div.b {
+  text-align: left;
+}
+.j{
+text-align:center;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+}
+li#Hyperledger {
+    margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/Hyperledger_Logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+li#Etherium {
+	margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/etherium.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    
+	}
+li#Stellar {
+    margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/Stellar_Logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    
+}
+li#EOS {
+	margin: 0;
+    padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/EOS.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+li#Corda {
+	margin: 0;
+    padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/Corda_Logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+li#Tron {
+    margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/Tron_Logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+li#Hashgraph {
+	margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/001-hedera-hashgraph.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    
+}
+li#Ripple {
+    margin: 0;
+	padding: 10px 0px 10px 84px;
+	list-style: none;
+	background-image: url(Images/ripple.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+
+
+
+</style>
+
+
+<!-- Navbar (sit on top) -->
+<div class="bl-top">
+  <div  class="navbar-default " id="myNavbar">
+    <a href="#home" class="bl-bar-item bl-button">Blocksoft</a>
+    <!-- Right-sided navbar links -->
+    <div class="bl-right bl-hide-small">
+      <a href="#about" class="bl-bar-item bl-button">ABOUT</a>
+      <a href="#services" class="bl-bar-item bl-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="#contact" class="bl-bar-item bl-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="bl-bar-item bl-button bl-right bl-hide-large bl-hide-medium" onclick="bl_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="bl-sidebar bl-bar-block bl-black bl-card bl-animate-left bl-hide-medium bl-hide-large " style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="bl_close()" class="bl-bar-item bl-button bl-large bl-padding-16">Close ×</a>
+  <a href="#about" onclick="bl_close()" class="bl-bar-item bl-button">ABOUT</a>
+  <a href="#services" onclick="bl_close()" class="bl-bar-item bl-button">SERVICES</a>
+  <a href="#contact" onclick="bl_close()" class="bl-bar-item bl-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+
+<header class="bgimg-1 bl-display-container bl-grayscale-min bg" id="home">
+  <div class="bl-display-left bl-text-white" style="padding:48px">
+ 
+   <div class="b">
+    <span class="bl-jumbo bl-hide-small">Start something that matters</span><br>
+    <span class="bl-xxlarge bl-hide-large bl-hide-medium">Start something that matters</span><br>
+    <span class="bl-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="bl-button bl-white bl-padding-large bl-large bl-margin-top bl-opacity bl-hover-opacity-off">Discover More</a></p>
+  </div>
+  <div class="bl-display-bottomleft bl-text-grey bl-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official bl-hover-opacity"></i>
+    <i class="fa fa-pinterest-p bl-hover-opacity"></i>
+    <i class="fa fa-twitter bl-hover-opacity"></i>
+    <i class="fa fa-linkedin bl-hover-opacity"></i>
+  </div>
+</header>
+</div>
+
+<!-- About Section -->
+<div class="bl-container " style="padding:128px 16px" id="about">
+  <h3 class="bl-center f"><b>ABOUT THE COMPANY</b></h3>
+  <p class="bl-center bl-llarge ">Key features of our company</p>
+  <div class="bl-row-padding bl-center" style="margin-top:64px">
+    <div class="bl-quarter " style="padding: 8px 8px;">
+<div class="wrrr">
+      <i class=" fa fa-desktop bl-margin-bottom bl-jumbo bl-center"></i>
+      <p class="bl-large">Responsive</p>
+      <p>Keeping your customers happy is the key to ensuring that your current clients don’t become former clients. When customer responsiveness is a priority, you’ll find that opportunities to serve your clients increase, while problems and service issues decrease.</p>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr">
+      <i class=" fa fa-heart bl-margin-bottom bl-jumbo"></i>
+      <p class="bl-large">Passion</p>
+      <p style="padding-bottom:25px">passionate employees are worth their weight in gold. Although there are many qualities that make for a successful and desirable employee, passion is the one trait that can make the most difference in both employee output and commitment in our organization.</p>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr">
+      <i class="fa fa-diamond bl-margin-bottom bl-jumbo"></i>
+      <p class="bl-large">Design</p>
+      <p style="padding-bottom:25px">Design can then help you turn these ideas into innovative and competitive products and services that are suitable for your market. You can also use design to make your business processes more efficient and to strengthen your marketing approach.</p>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr">
+      <i class="fa fa-cog bl-margin-bottom bl-jumbo"></i>
+      <p class="bl-large">Support</p>
+      <p style="padding-bottom:130px">IT support can keep your business competitive. It can also save you money over time and streamline your goals.</p>
+    </div>
+</div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class=" bl-container  " style="padding:12px 16px 120px">
+  <div class="bl-row-padding">
+    <div class="bl-col m6">
+<div class="bl-coll">
+      <h2><b>What Is Blockchain.</b></h2>
+      <p class="ta">Blockchain is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system.<br>A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain. Each block in the chain contains a number of transactions, and every time a new transaction occurs on the blockchain, a record of that transaction is added to every participant’s ledger.</p>
+      </div>
+ <p><a href="#services" class="bl-button bl-black"><i class="fa fa-th"> </i> View Our Services</a></p>
+   
+</div>
+
+	<div class="bl-col m6">
+      <img class="bl-image bl-round-large" src="Images/blockchain.jpeg" alt="Blockchain" width="700" height="394">
+     
+    </div>
+  </div>
+</div>
+
+<!-- Team Section
+<div class="bl-container" style="padding:128px 16px" id="team">
+  <h3 class="bl-center">THE TEAM</h3>
+  <p class="bl-center bl-large">The ones who runs this company</p>
+  <div class="bl-row-padding bl-grayscale" style="margin-top:64px">
+    <div class="bl-col l3 m6 bl-margin-bottom">
+      <div class="bl-card">
+        <img src="/blimages/team2.jpg" alt="John" style="width:100%">
+        <div class="bl-container">
+          <h3>Ayush Saxena</h3>
+          <p class="bl-opacity">CEO & Founder</p>
+          <p>About the person.</p>
+          <p><button class="bl-button bl-light-grey bl-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-col l3 m6 bl-margin-bottom">
+      <div class="bl-card">
+        <img src="/blimages/team1.jpg" alt="Jane" style="width:100%">
+        <div class="bl-container">
+          <h3>Harshit Gupta</h3>
+          <p class="bl-opacity">Art Director</p>
+          <p>About the person.</p>
+          <p><button class="bl-button bl-light-grey bl-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-col l3 m6 bl-margin-bottom">
+      <div class="bl-card">
+        <img src="/blimages/team3.jpg" alt="Mike" style="width:100%">
+        <div class="bl-container">
+          <h3>Arvind</h3>
+          <p class="bl-opacity">Web Designer</p>
+          <p>About the person.</p>
+          <p><button class="bl-button bl-light-grey bl-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-col l3 m6 bl-margin-bottom">
+      <div class="bl-card">
+        <img src="/blimages/team4.jpg" alt="Dan" style="width:100%">
+        <div class="bl-container">
+          <h3>Shivang</h3>
+          <p class="bl-opacity">Designer</p>
+          <p>About the person.</p>
+          <p><button class="bl-button bl-light-grey bl-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!-- Promo Section "Statistics" -->
+<div class="bl-container bl-row bl-center ">
+<div class="wrrr">
+  <div class="bl-quarter">
+    <span class="bl-xxlarge">0+</span>
+    <br>Partners
+  </div>
+  <div class="bl-quarter">
+    <span class="bl-xxlarge">0+</span>
+    <br>Projects Done
+  </div>
+  <div class="bl-quarter">
+    <span class="bl-xxlarge">0+</span>
+    <br>Happy Clients
+  </div>
+  <div class="bl-quarter">
+    <span class="bl-xxlarge">0+</span>
+    <br>Meetings
+  </div>
+  </div>
+</div>
+<!-- Service Section "Services" -->
+<div class="bottompadding " style="padding: 16px 16px;"id="services">
+
+<div class="bl-container" style="padding:80px 0px 1px 0px" >
+  <h3 class="bl-center fontsize f"><b>SERVICES</b></h3>
+  <p class="bl-center bl-llarge ">Blockchain will change the way you trust and we will change the way you blockchain</p>
+  <div class="bl-row-padding bl-center" style="margin-top:64px">
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+
+  <img src="Images/006-tokens.png" alt="Custom Blockchain Development">
+      <p class="bl-large" style="padding-bottom:25px" >Corda Development</p>
+ <p>
+      <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="Corda.html" target="_blank">Know More</a>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-heart bl-margin-bottom bl-jumbo "></i>-->
+ <img src="Images/002-coding.png" alt="ICO Development">
+  <p class="bl-large" style="padding-bottom:40px">ICO Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title=" dApp Development" href="ICO.html" target="_blank">Know More</a>
+    </div>
+</div >
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-cloud-download-alt bl-margin-bottom bl-jumbo"></i>-->
+ <img src="Images/bitcoin.png" alt="Tron Development">
+      <p class="bl-large" style="padding-bottom:40px">Tron Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="Tron.html" target="_blank">Know More</a>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-cog bl-margin-bottom bl-jumbo"></i>-->
+ <img src="Images/004-wallet.png" alt="Wallet Development">
+      <p class="bl-large" style="padding-bottom:38px">Wallet Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="wallet.html" target="_blank">Know More</a>
+    </div>
+	
+</div>
+  </div>
+</div>
+
+</div>
+<div class="bottompadding " style="padding: 16px 16px;"id="services">
+<div class="bl-container" style="padding:0px 0px 200px 0px" >
+  <div class="bl-row-padding bl-center" style="margin-top:64px">
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+
+      <img src="Images/003-development.png" alt="Wallet Development">
+      <p class="bl-large" style="padding-bottom:30px">Hyperledger Development</p>
+ <p>
+      <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="Hyperledger.html" target="_blank">Know More</a>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-heart bl-margin-bottom bl-jumbo "></i>-->
+ <img src="Images/003-hedera-hashgraph.png" alt="Hedera Development">
+  <p class="bl-large" style="padding-bottom:40px">Hedera Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="hedera.html" target="_blank">Know More</a>
+    </div>
+</div >
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-cloud-download-alt bl-margin-bottom bl-jumbo"></i>-->
+ <img src="Images/007-optimization.png" alt="EOS DEvelopment">
+      <p class="bl-large" style="padding-bottom:40px">EOS Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="EOS.html" target="_blank">Know More</a>
+    </div>
+</div>
+    <div class="bl-quarter" style="padding: 8px 8px;">
+<div class="wrrr a">
+      <!--<i class="fa fa-cog bl-margin-bottom bl-jumbo"></i>-->
+ <img src="Images/002-web-programming.png" alt="Etherium Development">
+      <p class="bl-large" style="padding-bottom:35px">Ethereum Development</p>
+      
+ <a class="LinkButton___2W7dI black___gCdVA " title="Mobile App Development" href="Etherium.html" target="_blank">Know More</a>
+    </div>
+	
+</div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- Work Section
+<div class="bl-container" style="padding:128px 16px" id="work">
+  <h3 class="bl-center">OUR WORK</h3>
+  <p class="bl-center bl-large">What we've done for people</p>
+
+  <div class="bl-row-padding" style="margin-top:64px">
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A microphone">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A phone">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A drone">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="bl-row-padding bl-section">
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A tablet">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A camera">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="bl-col l3 m6">
+      <img src="/blimages/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="bl-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>-->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="fbg bl-modal bl-black" onclick="this.style.display='none'">
+  <span class="bl-button bl-xxlarge bl-black bl-padding-large bl-display-topright" title="Close Modal Image">×</span>
+  <div class="bl-modal-content bl-animate-zoom bl-center bl-transparent bl-padding-64">
+    <img id="img01" class="bl-image">
+    <p id="caption" class="bl-opacity bl-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class=" bl-container  ">
+<div class="wrrr">
+  <div class="bl-row-padding">
+    <div class="bl-col m6">
+      <h3><b>Our Skills.</b></h3>
+      <p>There are skills needed for jobs that are not only desirable by employers but necessary in order to grow in your role or work well with others. <br>
+      Skills can fall into various categories and can transfer from one job to another.</p>
+      <p>Here are certain skills that can help you conquer some common challenges that can occur when you're learning to be independent and self-reliant.</p>
+    </div>
+    <div class="bl-col m6">
+      <p class="bl-wide"><i class="fa fa-camera bl-margin-right"></i>Skill 1</p>
+      <div class="bl-grey">
+        <div class="bl-container bl-dark-grey bl-center" style="width:90%">90%</div>
+      </div>
+      <p class="bl-wide"><i class="fa fa-desktop bl-margin-right"></i>Skill 2</p>
+      <div class="bl-grey">
+        <div class="bl-container bl-dark-grey bl-center" style="width:85%">85%</div>
+      </div>
+      <p class="bl-wide"><i class="fa fa-photo bl-margin-right"></i>Skill 3</p>
+      <div class="bl-grey">
+        <div class="bl-container bl-dark-grey bl-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- Technology Section-->
+<div class=" bl-container  " style="padding:120px 16px 120px">
+  <div class="bl-row-padding">
+	<div class="bl-coll">
+	<div class="j">
+      <h2><b>Blockchain Platforms we work on </b></h2></div>
+	  <ul>
+		<li id="Hyperledger"><h6><b>Hyperledger</b><br>A provisioned private network meant to share data and process for enterprises.</h6></li>
+		<li id="Etherium"><h6><b>Ethereum</b><br>A decentralized public platform that runs dApps.</h6></li>
+		<li id="Stellar"><h6><b>Stellar</b><br>Stellar is an open platform for building financial products that connect people everywhere.</h6></li>
+		<li id="EOS"><h6><b>EOS</b><br>EOS is a decentralized blockchain, which can process fast and free transactions.</h6></li>
+		<li id="Corda"><h6><b>Corda</b><br>Corda is an open source blockchain platform for businesses.</h6></li>
+		<li id="Hashgraph"><h6><b>Hashgraph</b><br>Fair, Fast and most secured acrylic graph DLT.</h6></li>
+		<li id="Tron"><h6><b>Tron</b><br>A decentralized platform to develop high-performance blockchain apps.</h6></li>
+		<li id="Ripple"><h6><b>Ripple</b><br>It is a real-time gross settlement system, currency exchange and remittance network</h6></li>
+		</ul>
+
+</div>
+</div>
+</div>
+<!-- Contact Section -->
+<div class=" bl-container " style="padding:128px 16px" id="contact">
+  <h3 class="bl-center f"><b>CONTACT</b></h3>
+  <p class="bl-center bl-llarge ">Lets get in touch. Send us a message</p>
+  <div style="margin-top:48px">
+    <p class="c"><i class="fa fa-map-marker fa-fw bl-xxlarge bl-margin-right"></i>India,Noida</p>
+    <p class="c"><i class="fa fa-phone fa-fw bl-xxlarge bl-margin-right"></i> Phone: +00 151515</p>
+    <p class="c"><i class="fa fa-envelope fa-fw bl-xxlarge bl-margin-right"> </i> Email: marksmantech@mail.com</p>
+    <br>
+    <form action="action_page.php" target="_blank" method="POST">
+      <p><input class="bl-input bl-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="bl-input bl-border" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="bl-input bl-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="bl-input bl-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="bl-button bl-black" type="submit" name="SENDMESSAGE">
+          <i class="fa fa-paper-plane"></i> SENDMESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+   
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bl-center bl-black bl-padding-64">
+  <a href="#home" class="bl-button bl-light-grey"><i class="fa fa-arrow-up bl-margin-right"></i>To the top</a>
+  <div class="bl-xlarge bl-section">
+    <i class="fa fa-facebook-official bl-hover-opacity"></i>
+    <i class="fa fa-pinterest-p bl-hover-opacity"></i>
+    <i class="fa fa-twitter bl-hover-opacity"></i>
+    <i class="fa fa-linkedin bl-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function bl_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function bl_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
